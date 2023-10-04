@@ -1,110 +1,144 @@
-
+/* Importing fonts from Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+
+/* Resetting default styles */
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
+/* Setting basic styles */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem; 
+  color: hsl(192, 100%, 9%);
+}
+
+/* Creating a simple navigation bar */
+.navbar {
+ display: flex;
+  justify-content: space-between;
+  padding: 0 20px 0;
+  margin: 25px auto 100px;
+}
+
+.nav_button {
+  background: transparent ;
+  color: hsl(322, 100%, 66%) ;
+  padding: 0.5rem 3rem; 
+  border: 0.1rem  solid hsl(322, 100%, 66%);
+  border-radius: 2rem ; 
+  font-weight: 600 ;
+  margin: 0.5 rem ; 
+  cursor: pointer;
+  font-family: "open sans" , sans-serif;
   
-  body {
-    font-family: 'Open Sans', sans-serif;
-    color: hsl(192, 100%, 9%);
-    min-height: 100vh;
-  }
-  
-  /* Global styles */
-  .container {
-    max-width: 1440px; /* Updated max width for desktop */
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  /* Header styles */
-  header {
-    color: hsl(192, 100%, 9%); /* Updated background color */
-    color: #fff;
-    padding: 20px;
-  }
-  
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  #nav-logo {
-    width: 100px; /* Adjust the size as needed */
-  }
-  
-  button {
-    background-color: hsl(322, 100%, 66%); /* Updated button color */
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  /* Main section styles */
-  .main {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .column {
-    flex: 1;
-    margin: 10px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-  }
-  
-  .column img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Community section styles */
-  .community {
-    background-color: hsl(322, 100%, 66%); /* Updated community section color */
+}
+ .nav_button:hover {
+    color :  hsl(321, 100%, 78%);
+    border : 0.1rem  solid  hsl(321, 100%, 78%);
+ }
+
+ .intro_title{
+    font-family: "Poppins", sans-serif;
     text-align: center;
-    padding: 40px 0;
-  }
-  
-  /* Footer styles */
-  footer {
-    background-color: hsl(192, 100%, 9%); /* Updated footer background color */
-    color: #fff;
-    padding: 40px 0;
-  }
-  
-  /* Attribution styles */
-  .attribution {
-    font-size: 11px;
-    text-align: left;
-  }
-  
-  .attribution a {
-    color: #fff;
-    text-decoration: underline;
-  }
-  
-  .attribution a:hover {
-    text-decoration: none;
-    color: #34ccfa;
-  }
-  
-  /* Typography styles */
-  h1, h2, h3 {
-    font-family: 'Poppins', sans-serif; /* Updated font family */
-    font-weight: 700; /* Updated font weight */
-  }
-  
-  p {
-    font-family: 'Open Sans', sans-serif; /* Updated font family */
-    font-weight: 400; /* Updated font weight */
-    line-height: 1.5;
-  }
-  
+    width:  100%;
+    margin: 0 auto  2.25rem ;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+ }
+
+/* Styling the intro section */
+.intro_description {
+  max-width: 34.375rem; /* 550px converted to rem */
+  margin: 0 auto 0.125rem auto; /* 2px converted to rem */
+  text-align: center;
+}
+
+/* Styling the call-to-action button */
+.intro_button {
+  background-color: hsl(322, 100%, 66%);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  padding:1.4rem 6rem; /* 1px 2px converted to rem */
+  margin: 0 auto 0.125rem auto;
+  display : block ;
+  font-weight: 2.5rem;
+  font-size :1.1rem;
+  border: none;
+  border-radius: 3.125rem; 
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.intro_button:hover {
+    color :  hsl(321, 100%, 78%);
+    border : 0.1rem  solid  hsl(321, 100%, 78%);
+}
+
+/* Styling the image */
+.intro img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0.0625rem auto; /* 1px converted to rem */
+}
+
+/* Styling the count section */
+.count {
+  text-align: center;
+  margin: 0.125rem auto; /* 2px converted to rem */
+}
+
+.count h1 {
+  font-size: 0.125rem; /* 2px converted to rem */
+  margin-bottom: 0.03125rem; /* 0.5px converted to rem */
+}
+
+/* Styling the columns */
+.column {
+  margin: 0.125rem auto; /* 2px converted to rem */
+}
+
+/* Creating a simple footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0.0625rem; /* 1px converted to rem */
+}
+
+/* Styling the contact information */
+.phone, .email {
+  display: flex;
+  align-items: center;
+  gap: 0.03125rem; /* 0.5px converted to rem */
+  margin: 0.03125rem auto; /* 0.5px converted to rem */
+}
+
+.email a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.email a:hover {
+  color: #007bff;
+}
+
+/* Styling the social media icons */
+.media-icons {
+  display: flex;
+  gap: 0.03125rem; /* 0.5px converted to rem */
+  margin: 0.0625rem auto; /* 1px converted to rem */
+}
+
+.media-icons i {
+  color: #fff;
+  font-size: 0.09375rem; /* 1.5px converted to rem */
+}
+
+.media-icons i:hover {
+  color: #007bff;
+}
