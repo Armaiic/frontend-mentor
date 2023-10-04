@@ -1,0 +1,110 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(192, 100%, 9%);
+    min-height: 100vh;
+  }
+  
+  /* Global styles */
+  .container {
+    max-width: 1440px; /* Updated max width for desktop */
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  header {
+    color: hsl(192, 100%, 9%); /* Updated background color */
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #nav-logo {
+    width: 100px; /* Adjust the size as needed */
+  }
+  
+  button {
+    background-color: hsl(322, 100%, 66%); /* Updated button color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Main section styles */
+  .main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    flex: 1;
+    margin: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .column img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Community section styles */
+  .community {
+    background-color: hsl(322, 100%, 66%); /* Updated community section color */
+    text-align: center;
+    padding: 40px 0;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: hsl(192, 100%, 9%); /* Updated footer background color */
+    color: #fff;
+    padding: 40px 0;
+  }
+  
+  /* Attribution styles */
+  .attribution {
+    font-size: 11px;
+    text-align: left;
+  }
+  
+  .attribution a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .attribution a:hover {
+    text-decoration: none;
+    color: #34ccfa;
+  }
+  
+  /* Typography styles */
+  h1, h2, h3 {
+    font-family: 'Poppins', sans-serif; /* Updated font family */
+    font-weight: 700; /* Updated font weight */
+  }
+  
+  p {
+    font-family: 'Open Sans', sans-serif; /* Updated font family */
+    font-weight: 400; /* Updated font weight */
+    line-height: 1.5;
+  }
+  
