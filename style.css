@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} 
 
 /* Setting basic styles */
 body {
@@ -132,20 +132,21 @@ main {
 }
 
 .pattern-top-desktop,.pattern-bottom-desktop {
-  display: block;
+  
   width: 100%;
 }
  
-.column_grow {
-  border: red solid 3px;
-}
 
 .grow_together {
   width: 40%;
   height: 40%;
 }
 
-
+.column  { 
+  border : red solid 3px;
+  padding: 10rem ;
+  background: hsl(207, 100%, 98%);
+}
 .column__text{
   display: flex;
   flex-direction: row-reverse;
@@ -153,21 +154,28 @@ main {
   align-items: center;
   margin: 0;
   /*padding: 2rem 4rem;*/
-  background: hsl(207, 100%, 98%);
+  /* background: hsl(207, 100%, 98%); */
   border: red solid 3px;
 }
-
+ #column_second {
+  border : red solid 3px;
+  padding: 10rem ;
+ }
+#column_second section {
+  padding-left : 8rem;
+}
 
 /* Styling the second column */
-.column__text_second {
+#column__text_second {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   /*margin: 2rem 0;*/
-  border: red solid 3px;
-}
- 
+   border: red solid 3px;
+   
+} 
+
 /* Adjust the styles for the images within this column */
 .column__text_second img {
   max-width: 100%;
@@ -204,6 +212,7 @@ h2 {
 
 .column_grow {
   width: 80%;
+  border: red solid 3px;
 }
 /* Adjust the styles for the text sections within these columns */
 
