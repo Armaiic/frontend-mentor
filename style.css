@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
 
 /* Resetting default styles */
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,49 +11,48 @@
 /* Setting basic styles */
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.2rem; 
+  font-size: 1.2rem;
   color: hsl(192, 100%, 9%);
 }
 
 /* Creating a simple navigation bar */
 .navbar {
- display: flex;
+  display: flex;
   justify-content: space-between;
-  padding: 0 20px 0;
-  margin: 25px auto 100px;
+  padding: 0 1.25rem 0;
+  margin: 1.5625rem auto 6.25rem;
 }
 
 .nav_button {
-  background: transparent ;
-  color: hsl(322, 100%, 66%) ;
-  padding: 0.5rem 3rem; 
-  border: 0.1rem  solid hsl(322, 100%, 66%);
-  border-radius: 2rem ; 
-  font-weight: 600 ;
-  margin: 0.5 rem ; 
+  background: transparent;
+  color: hsl(322, 100%, 66%);
+  padding: 0.5rem 3rem;
+  border: 0.1rem solid hsl(322, 100%, 66%);
+  border-radius: 2rem;
+  font-weight: 600;
+  margin: 0.5rem;
   cursor: pointer;
-  font-family: "open sans" , sans-serif;
-  
+  font-family: "open sans", sans-serif;
 }
- .nav_button:hover {
-    color :  hsl(321, 100%, 78%);
-    border : 0.1rem  solid  hsl(321, 100%, 78%);
- }
 
- .intro_title{
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    width:  100%;
-    margin: 0 auto  2.25rem ;
-    font-size: 1.5rem;
-    font-weight: bold;
-    
- }
+.nav_button:hover {
+  color: hsl(321, 100%, 78%);
+  border: 0.1rem solid hsl(321, 100%, 78%);
+}
+
+.intro_title {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 2.25rem;
+  font-size: 2em;
+  font-weight: bold;
+}
 
 /* Styling the intro section */
 .intro_description {
-  max-width: 34.375rem; /* 550px converted to rem */
-  margin: 0 auto 0.125rem auto; /* 2px converted to rem */
+  max-width: 34.375rem;
+  margin: 0 auto 0.125rem auto;
   text-align: center;
 }
 
@@ -62,20 +61,20 @@ body {
   background-color: hsl(322, 100%, 66%);
   color: #fff;
   font-family: "Poppins", sans-serif;
-  padding:1.4rem 6rem; /* 1px 2px converted to rem */
-  margin: 0 auto 0.125rem auto;
-  display : block ;
+  padding: 1.4rem 6rem;
+  margin: 2rem auto 2rem auto;
+  display: block;
   font-weight: 2.5rem;
-  font-size :1.1rem;
+  font-size: 1.1rem;
   border: none;
-  border-radius: 3.125rem; 
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 3.125rem;
+  box-shadow: 0 0.3125rem 0.3125rem 0 rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
 
 .intro_button:hover {
-    color :  hsl(321, 100%, 78%);
-    border : 0.1rem  solid  hsl(321, 100%, 78%);
+  color: hsl(321, 100%, 78%);
+  border: 0.1rem solid hsl(321, 100%, 78%);
 }
 
 /* Styling the image */
@@ -83,62 +82,164 @@ body {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0.0625rem auto; /* 1px converted to rem */
+  margin: 0.0625rem auto;
 }
 
 /* Styling the count section */
 .count {
   text-align: center;
-  margin: 0.125rem auto; /* 2px converted to rem */
+  margin: 0.125rem auto;
+  padding: 2rem 0;
 }
 
-.count h1 {
-  font-size: 0.125rem; /* 2px converted to rem */
-  margin-bottom: 0.03125rem; /* 0.5px converted to rem */
+.count section {
+  display: inline-block;
+  margin: 0 15rem;
 }
 
-/* Styling the columns */
-.column {
-  margin: 0.125rem auto; /* 2px converted to rem */
+.count_title {
+  font-size: 4.6rem;
+  margin-bottom: 0.5rem;
+  font-family: "Open Sans", sans-serif;
 }
 
-/* Creating a simple footer */
+.count_img {
+  
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  margin: 0.0625rem auto;
+  margin-right: 10rem;
+}
+
+.count_img1 {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  margin: 0.0625rem auto;
+  margin-right: 10rem;
+}
+
+.count_desc {
+  opacity: 0.5;
+  color: hsl(192, 100%, 9%);
+}
+/*Section main*/
+/* Styling the first column */
+main {
+  display:flex ;
+  flex-direction: column;
+}
+
+.pattern-top-desktop,.pattern-bottom-desktop {
+  display: block;
+  width: 100%;
+}
+ 
+.column_grow {
+  border: red solid 3px;
+}
+
+.grow_together {
+  width: 40%;
+  height: 40%;
+}
+
+
+.column__text{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  /*padding: 2rem 4rem;*/
+  background: hsl(207, 100%, 98%);
+  border: red solid 3px;
+}
+
+
+/* Styling the second column */
+.column__text_second {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /*margin: 2rem 0;*/
+  border: red solid 3px;
+}
+ 
+/* Adjust the styles for the images within this column */
+.column__text_second img {
+  max-width: 100%;
+  height: auto;
+  border: red solid 3px;
+}
+
+
+/* Adjust the styles for the text section within this column */
+ .column__text_second section {
+  /*flex-basis: 45%;*/
+  text-align: left;
+  border: red solid 3px;
+} 
+
+/* Styling the third column */
+/* .column__text_third {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  /*padding: 2rem 4rem;*/
+ /* background: hsl(207, 100%, 98%);
+ border: red solid 3px;
+} */ 
+h2 {
+  
+   font-size: 1.7rem;
+   font-weight: bold;
+   border: red solid 3px;
+}
+/* Adjust the styles for the images within these columns */
+
+.column_grow {
+  width: 80%;
+}
+/* Adjust the styles for the text sections within these columns */
+
+/*Fin de la section main*/
+.community {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: max-content;
+  margin: 10rem auto;
+}
+.community_button {
+  color: white;
+    background: hsl(322, 100%, 66%);
+    margin-top: 2rem;
+    padding: 1.4rem 6rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+/* Styling the footer */
 .footer {
-  background-color: #333;
+  background-color: hsl(192, 100%, 9%);
   color: #fff;
   text-align: center;
-  padding: 0.0625rem; /* 1px converted to rem */
+  margin: 0;
+  padding: 5rem;
 }
 
 /* Styling the contact information */
-.phone, .email {
-  display: flex;
-  align-items: center;
-  gap: 0.03125rem; /* 0.5px converted to rem */
-  margin: 0.03125rem auto; /* 0.5px converted to rem */
+.footer_text1 {
+  background-color: hsl(192, 100%, 9%); /* Match the footer background color */
+  padding: 2rem; /* Add padding to create space around the content */
 }
 
-.email a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.email a:hover {
-  color: #007bff;
-}
-
-/* Styling the social media icons */
-.media-icons {
-  display: flex;
-  gap: 0.03125rem; /* 0.5px converted to rem */
-  margin: 0.0625rem auto; /* 1px converted to rem */
-}
-
-.media-icons i {
-  color: #fff;
-  font-size: 0.09375rem; /* 1.5px converted to rem */
-}
-
-.media-icons i:hover {
-  color: #007bff;
-}
