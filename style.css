@@ -66,7 +66,7 @@ body {
   display: block;
   font-weight: 2.5rem;
   font-size: 1.1rem;
-  border: none;
+  border: 0.1rem solid transparent;
   border-radius: 3.125rem;
   box-shadow: 0 0.3125rem 0.3125rem 0 rgba(0, 0, 0, 0.25);
   cursor: pointer;
@@ -143,7 +143,7 @@ main {
 }
 
 .column  { 
-  border : red solid 3px;
+  
   padding: 10rem ;
   background: hsl(207, 100%, 98%);
 }
@@ -153,12 +153,10 @@ main {
   justify-content: space-between;
   align-items: center;
   margin: 0;
-  /*padding: 2rem 4rem;*/
-  /* background: hsl(207, 100%, 98%); */
-  border: red solid 3px;
+
 }
  #column_second {
-  border : red solid 3px;
+  
   padding: 10rem ;
  }
 #column_second section {
@@ -172,7 +170,7 @@ main {
   justify-content: space-between;
   align-items: center;
   /*margin: 2rem 0;*/
-   border: red solid 3px;
+ 
    
 } 
 
@@ -180,7 +178,7 @@ main {
 .column__text_second img {
   max-width: 100%;
   height: auto;
-  border: red solid 3px;
+
 }
 
 
@@ -188,31 +186,21 @@ main {
  .column__text_second section {
   /*flex-basis: 45%;*/
   text-align: left;
-  border: red solid 3px;
+ 
 } 
 
-/* Styling the third column */
-/* .column__text_third {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-  /*padding: 2rem 4rem;*/
- /* background: hsl(207, 100%, 98%);
- border: red solid 3px;
-} */ 
+
 h2 {
   
    font-size: 1.7rem;
    font-weight: bold;
-   border: red solid 3px;
+  
 }
 /* Adjust the styles for the images within these columns */
 
 .column_grow {
   width: 80%;
-  border: red solid 3px;
+ 
 }
 /* Adjust the styles for the text sections within these columns */
 
@@ -225,7 +213,7 @@ h2 {
   margin: 10rem auto;
 }
 .community_button {
-  color: white;
+    color: white;
     background: hsl(322, 100%, 66%);
     margin-top: 2rem;
     padding: 1.4rem 6rem;
@@ -243,20 +231,64 @@ h2 {
 }
 .footer_pattern_top_desktop {
   width: 100%;
-  margin-bottom: -1rem;
-  border: red solid 3px;
+  margin-bottom: -0.5rem;
+  
  }
 /* Styling the footer */
 .footer {
-  background-color: hsl(192, 100%, 9%); 
+  background: hsl(192, 100%, 9%); 
   color: #fff;
-  text-align: center;
-  padding: 10rem;
+  display: flex;
+  flex-direction: row;
+   padding: 10rem; 
+  /* border: red solid 3px; */
+  justify-content: space-between;
+}
+.huddle_text {
+display: flex;
+flex-direction: column;
+align-items: left;
+/* border: red solid 3px; */
+width: 40%;
+height: 40%;
+}
+.letter  {
+  display : flex;
+  flex-direction: column;
+  /* border : red solid 3px ; */
+  margin-left : 35rem;
 }
 
-/* Styling the contact information */
-.footer_text1 {
-  background-color: hsl(192, 100%, 9%); /* Match the footer background color */
-  
+.footer_logo {
+  filter : brightness(0) invert(100);
+  /* border: red solid 3px; */
+  display: flex;
+  flex-direction: column;
+  align-items: left; 
+ }
+
+ .sub_button {
+  color: white;
+  background: hsl(322, 100%, 66%);
+  margin-top: 2rem;
+  padding: 1.4rem 6rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  border: 3px solid hsl(322, 100%, 66%); /* Add border to the button */
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
+.sub_input {
+  margin-top: 2rem;
+  padding: 1.4rem 6rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  border-radius: 0.5rem;
+}
+
+.sub_button:hover {
+  color: hsl(321, 100%, 78%);
+  border-color: hsl(321, 100%, 78%); /* Change border color on hover for the button */
+}
