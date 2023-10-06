@@ -235,7 +235,7 @@ h2 {
   
  }
 /* Styling the footer */
-.footer {
+.footer { 
   background: hsl(192, 100%, 9%); 
   color: #fff;
   display: flex;
@@ -245,44 +245,51 @@ h2 {
   justify-content: space-between;
 }
 .huddle_text {
+
 display: flex;
 flex-direction: column;
 align-items: left;
 /* border: red solid 3px; */
-width: 40%;
-height: 40%;
+width: 50%;
+height: 50%;
+font-size: 1.1rem;
 }
 .letter  {
   display : flex;
   flex-direction: column;
-  /* border : red solid 3px ; */
-  margin-left : 35rem;
-}
-
+  align-items: left;
+  width: 45%;
+  font-size: 1.1rem;
+} 
 .footer_logo {
   filter : brightness(0) invert(100);
-  /* border: red solid 3px; */
   display: flex;
   flex-direction: column;
   align-items: left; 
  }
 
+.bot_letter {
+  display: flex;
+  flex-direction: row; 
+ 
+}
+
+
  .sub_button {
   color: white;
   background: hsl(322, 100%, 66%);
-  margin-top: 2rem;
-  padding: 1.4rem 6rem;
+  padding: 1rem 2rem;
   font-size: 1.1rem;
   font-weight: 400;
   border: 3px solid hsl(322, 100%, 66%); /* Add border to the button */
   border-radius: 0.5rem;
-  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-}
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.25); 
+  margin-left : 2rem;
+ }
 
 .sub_input {
   margin-top: 2rem;
-  padding: 1.4rem 6rem;
+  padding: 1rem 3rem;
   font-size: 1.1rem;
   font-weight: 400;
   border-radius: 0.5rem;
@@ -291,4 +298,18 @@ height: 40%;
 .sub_button:hover {
   color: hsl(321, 100%, 78%);
   border-color: hsl(321, 100%, 78%); /* Change border color on hover for the button */
+}
+
+a{
+  text-decoration: none ;
+  color : white ;
+}
+
+.phone{
+  display: flex;
+  flex-direction: row;
+  
+}
+.phone p {
+  padding-left : 0.5rem;
 }
